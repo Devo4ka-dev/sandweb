@@ -1,4 +1,4 @@
-# Simple Web Server
+# Simple Web Server version 1.0
 
 [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
 
