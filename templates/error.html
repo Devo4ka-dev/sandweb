@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ошибка</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #87ceeb; 
+        }
+        
+        .error-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+        
+        .grass {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 50px;
+            background-color: #7cfc00; 
+        }
+        
+        .clouds {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+        
+        .cloud {
+            position: absolute;
+            width: 150px;
+            height: 80px;
+            background-color: #ffffff; 
+            border-radius: 50px;
+            opacity: 0;
+            animation: cloudAnimation 9s linear infinite;
+        }
+        
+        @keyframes cloudAnimation {
+            0% { transform: translateX(-100%); opacity: 0; }
+            20% { opacity: 0.2; }
+            80% { opacity: 0.8; }
+            100% { transform: translateX(100%); opacity: 0; }
+        }
+        
+        .cloud:nth-child(1) {
+            top: 20px;
+            left: 10%;
+            animation-delay: 0s;
+        }
+        
+        .cloud:nth-child(2) {
+            top: 100px;
+            left: 30%;
+            animation-delay: 5s;
+        }
+        
+        .cloud:nth-child(3) {
+            top: 50px;
+            left: 60%;
+            animation-delay: 10s;
+        }
+        
+        .error-container h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+            color: #ffffff; 
+        }
+        
+        .error-container p {
+            font-size: 18px;
+            color: #ffffff; 
+            margin-bottom: 20px;
+        }
+        
+        .error-container a {
+            text-decoration: none;
+            color: #ffffff; 
+            font-weight: bold;
+        }
+        
+        .error-container .logo {
+            max-width: 150px;
+            margin-bottom: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            .error-container h1 {
+                font-size: 36px;
+            }
+            
+            .error-container p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <div class="grass"></div>
+        <div class="clouds">
+            <div class="cloud"></div>
+            <div class="cloud"></div>
+            <div class="cloud"></div>
+        </div>
+        <h1>Ошибка { error_code }</h1>
+        <p>{ error_message }</p>
+    </div>
+</body>
+</html>
