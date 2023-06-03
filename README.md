@@ -21,8 +21,8 @@ This is a simple web server built using Flask, a lightweight web framework in Py
 Usage
 To start the web server, run the following command:
 
-```bash
-python3 app.py
+  ```bash
+  python3 app.py
 
 The server will be accessible at http://localhost:80.
 
@@ -53,8 +53,8 @@ The server will be accessible at http://localhost:80.
 Использование
 Чтобы запустить веб-сервер, выполните следующую команду:
 
-```bash
-python3 app.py
+  ```bash
+  python3 app.py
 
 Сервер будет доступен по адресу http://localhost:80.
 
