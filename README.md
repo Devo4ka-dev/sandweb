@@ -23,6 +23,7 @@ To start the web server, run the following command:
 
   ```bash
   python3 app.py
+  ```
 
 The server will be accessible at http://localhost:80.
 
@@ -55,6 +56,7 @@ The server will be accessible at http://localhost:80.
 
   ```bash
   python3 app.py
+  ```
 
 Сервер будет доступен по адресу http://localhost:80.
 
